@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/03 14:22:59 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/03 20:25:48 by cowen            ###   ########.fr       */
+/*   Created: 2022/02/03 17:03:47 by cowen             #+#    #+#             */
+/*   Updated: 2022/02/03 18:47:45 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
 
-int	main(void){
-	ClapTrap a;
-	ClapTrap b("Fedor");
-	ScavTrap c("Mishka");
-	
-	a.attack("Fedor");
-	b.takeDamage(0);
-	c.attack("Fedor");
-	b.takeDamage(20);
-	b.beRepaired(0);
-	c.beRepaired(5);
-	c.guardGate();
-}
+
+class ScavTrap : public ClapTrap {
+	public:
+		ScavTrap(void);
+		ScavTrap(std::string);
+		ScavTrap(const ScavTrap&);
+		~ScavTrap(void);
+		ScavTrap operator=(const ScavTrap & rhs);
+		void	guardGate(void);
+		void 	attack(const std::string& target);
+};
