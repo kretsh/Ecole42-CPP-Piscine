@@ -6,7 +6,7 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 14:25:07 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/03 17:01:23 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/06 16:08:06 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,10 @@ class ClapTrap{
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
+		unsigned int	getHealth(void);
+		unsigned int	getEnergy(void);
+		unsigned int	getAttack(void);
+		std::string		getName(void);
 };
 
 #endif

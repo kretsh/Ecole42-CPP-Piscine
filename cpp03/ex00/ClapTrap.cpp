@@ -6,7 +6,7 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 14:24:24 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/03 16:37:20 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/06 16:08:28 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,17 @@ void ClapTrap::beRepaired(unsigned int amount){
 		this->_energyPoints--;
 		this->_hitPoints += amount;
 	}
+}
+
+unsigned int	ClapTrap::getHealth(void){
+	return (this->_hitPoints);
+}
+unsigned int	ClapTrap::getEnergy(void){
+	return (this->_energyPoints);
+}
+unsigned int	ClapTrap::getAttack(void){
+	return (this->_attackDamage);
+}
+std::string	ClapTrap::getName(void){
+	return (this->_name);
 }
