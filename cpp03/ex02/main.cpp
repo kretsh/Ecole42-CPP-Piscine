@@ -6,30 +6,30 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 14:22:59 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/03 20:27:58 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/06 16:27:41 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
 int	main(void){
-	ClapTrap a;
-	ClapTrap b("Fedor");
-	ScavTrap c("Mishka");
-	FragTrap d("Svyatogor");
+	FragTrap a;
+	FragTrap b("Fedor");
+
+	std::cout << std::endl << "Name of ScavTrap a is " << a.getName() << std::endl;
+	std::cout << "He has :" << std::endl;
+	std::cout << a.getAttack() << " Attack points" << std::endl;
+	std::cout << a.getHealth() << " Health points" << std::endl;
+	std::cout << a.getEnergy() << " Energy points" << std::endl << std::endl;
+	std::cout << "Name of ScavTrap b is " << b.getName() << std::endl;
+	std::cout << "He has :" << std::endl;
+	std::cout << b.getAttack() << " Attack points" << std::endl;
+	std::cout << b.getHealth() << " Health points" << std::endl;
+	std::cout << b.getEnergy() << " Energy points" << std::endl << std::endl;
 	
-	a.attack("Fedor");
+	b.attack("Someone");
 	b.takeDamage(0);
-	c.attack("Fedor");
-	b.takeDamage(20);
-	b.beRepaired(0);
-	c.beRepaired(5);
-	c.guardGate();
-	d.attack("Mishka");
-	c.takeDamage(20);
-	c.attack("Svyatogor");
-	d.takeDamage(10);
-	d.highFivesGuys();
+	b.beRepaired(10);
+	b.highFivesGuys();
 }

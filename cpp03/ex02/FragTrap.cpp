@@ -6,7 +6,7 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 19:38:38 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/03 20:25:22 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/06 16:25:15 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ FragTrap::FragTrap(const FragTrap & rhs){
 	this->_energyPoints = rhs._energyPoints;
 }
 
-FragTrap	FragTrap::operator=(const FragTrap & rhs){
+FragTrap&	FragTrap::operator=(const FragTrap & rhs){
 	if (this != &rhs){
 		this->_name = rhs._name;
 		this->_attackDamage = rhs._attackDamage;

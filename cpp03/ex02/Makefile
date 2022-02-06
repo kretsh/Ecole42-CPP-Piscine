@@ -6,16 +6,16 @@
 #    By: cowen <cowen@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/16 20:08:32 by cowen             #+#    #+#              #
-#    Updated: 2022/02/03 20:29:03 by cowen            ###   ########.fr        #
+#    Updated: 2022/02/06 16:24:58 by cowen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = FragTrap
 
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRCS = main.cpp ClapTrap.cpp FragTrap.cpp
 
-HEADER = ClapTrap.hpp ScavTrap.hpp ScavTrap.hpp
+HEADER = ClapTrap.hpp FragTrap.hpp
 
 OBJS = $(patsubst %.cpp, %.o, $(SRCS))
 

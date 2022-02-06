@@ -6,7 +6,7 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 17:03:45 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/03 18:51:42 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/06 16:15:09 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ ScavTrap::ScavTrap(const ScavTrap & rhs){
 	this->_energyPoints = rhs._energyPoints;
 }
 
-ScavTrap	ScavTrap::operator=(const ScavTrap & rhs){
+ScavTrap&	ScavTrap::operator=(const ScavTrap & rhs){
 	if (this != &rhs){
 		this->_attackDamage = rhs._attackDamage;
 		this->_energyPoints = rhs._energyPoints;
