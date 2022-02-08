@@ -6,7 +6,7 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:37:35 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/08 17:05:25 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/08 17:37:38 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,14 @@ void deleteZoo(Animal **zoo){
 int main() {
     Dog* a1 = new Dog();
     Dog* a2 = new Dog(*a1);
+    Animal* a3 = new Dog();
     std::cout << std::endl << std::endl;
     Animal* zoo[N];
 
-    *a1 = *a2;
+    *a3 = *a2;
     Zoo(zoo);
     deleteZoo(zoo);
     delete a1;
     delete a2;
+    delete a3;
 }
