@@ -6,7 +6,7 @@
 #    By: cowen <cowen@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/16 20:08:32 by cowen             #+#    #+#              #
-#    Updated: 2022/02/12 16:46:33 by cowen            ###   ########.fr        #
+#    Updated: 2022/02/12 19:25:19 by cowen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ ${NAME}	:	${OBJS} $(HEADER)
 			$(CC) $(CPPFLAGS) ${OBJS} -o ${NAME}
 
 %.o 	: 	%.c $(HEADER) 		
-			$(CC) $(CFLAGS) -c $< -o $@
+			$(CC) $(CPPFLAGS) -c $< -o $@
 			
 clean	: 		
 			${RM} ${OBJS}
