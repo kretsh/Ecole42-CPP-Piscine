@@ -6,7 +6,7 @@
 #    By: cowen <cowen@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/16 20:08:32 by cowen             #+#    #+#              #
-#    Updated: 2022/02/19 16:33:40 by cowen            ###   ########.fr        #
+#    Updated: 2022/02/20 15:46:14 by cowen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = convert
 
 SRCS = main.cpp
 
-HEADER = main.hpp
+HEADER = iter.hpp
 
 OBJS = $(patsubst %.cpp, %.o, $(SRCS))
 
