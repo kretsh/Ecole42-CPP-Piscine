@@ -67,6 +67,9 @@
 		"vector": "cpp",
 		"__memory": "cpp",
 		"*.tpp": "cpp",
-		"list": "cpp"
+		"list": "cpp",
+		"numeric": "cpp",
+		"__cxx_version": "cpp",
+		"__functional_03": "cpp"
 	}
 }
