@@ -6,7 +6,7 @@
 /*   By: cowen <cowen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 20:43:11 by cowen             #+#    #+#             */
-/*   Updated: 2022/02/21 14:28:45 by cowen            ###   ########.fr       */
+/*   Updated: 2022/02/21 17:52:16 by cowen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,13 @@ int Span::shortestSpan(void){
 	return *(std::min_element(output.begin() + 1, output.end()));
 }
 
+int Span::RandomNumber(void){
+	return (std::rand()% 100000);
+}
+
+void Span::getRandomValues(void){
+	std::srand (unsigned(std::time(0)));
+	_array.resize(_amount);
+	std::generate(_array.begin(), _array.end(), Span::RandomNumber);
+}
 
