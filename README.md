@@ -1,6 +1,6 @@
 # Ecole42-CPP-Piscine
-Данный проект является подготовительным вводом в объектно ориентированное програмирование на примере С++. Вы можете ознакомиться с моим кодом и решением задач на  момент Январь-Февраль'22. <br>
-Ниже приведены задания по каждому из подмодулей исполняемый код лежит в папках репозитория с одноименным названием: <br><br>
+This project are preparing for OOP based on C++ language. You can have a look my realization. January-February 2022. 
+Lower you can see the subjects all over the modules. My solutions are in a folder with the same name: <br><br>
 [CPP00](https://cdn.intra.42.fr/pdf/pdf/41482/en.subject.pdf) <br>Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff <br><br>
 [CPP01](https://cdn.intra.42.fr/pdf/pdf/41364/en.subject.pdf) <br> Memory allocation, pointers to members, references, switch statement <br> <br>
 [CPP02](https://cdn.intra.42.fr/pdf/pdf/41373/en.subject.pdf) <br> Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form <br><br>
